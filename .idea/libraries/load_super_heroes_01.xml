@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="load-super-heroes-01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/super-heroes/load-super-heroes/target/load-super-heroes-01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

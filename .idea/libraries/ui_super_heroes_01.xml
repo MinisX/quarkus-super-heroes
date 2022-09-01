@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ui-super-heroes-01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/super-heroes/ui-super-heroes/target/quarkus-app/app/ui-super-heroes-01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ui-super-heroes-011">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/super-heroes/ui-super-heroes/target/ui-super-heroes-01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rest-villains-dev">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/super-heroes/rest-villains/target/rest-villains-dev.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
