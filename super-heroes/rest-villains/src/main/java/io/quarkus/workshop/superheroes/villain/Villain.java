@@ -36,4 +36,17 @@ public class Villain extends PanacheEntity {
             ", powers='" + powers + '\'' +
             '}';
     }
+
+    /*
+    Picking a random villain is achieved as follows:
+        Gets the number of villains stored in the database (count())
+        Picks a random number between 0 and count()
+        Asks Hibernate with Panache to find all villains in a paginated way and return the random page containing 1 villain.
+    */
+    public static Villain findRandom() {
+        long countVillains = count();
+        Random random = new Random();
+        int randomVillain = random.nextInt((int) countVillains);
+        return findAll().page(randomVillain, 1).firstResult();
+    }
 }
