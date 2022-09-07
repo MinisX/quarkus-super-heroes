@@ -18,7 +18,7 @@ import java.util.List;
 
 import static javax.ws.rs.core.MediaType.TEXT_PLAIN;
 
-/*It’s a very simple REST endpoint returning "Hello RESTEasy Reactive" to requests on /api/villains. It uses JAX-RS annotations:
+/*It’s a very simple REST endpoint returning result to requests on /api/villains. It uses JAX-RS annotations:
 @Path indicates the HTTP path handled by the resource,
 @GET indicates that the method should be called when receiving a GET request on /api/villains.*/
 
