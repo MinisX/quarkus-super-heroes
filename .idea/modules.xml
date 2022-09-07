@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/.mvn/.mvn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villains/.mvn/.mvn1.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villains/.mvn/.mvn1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/src/load-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/src/load-super-heroes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villains/src/main/main.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villains/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/quarkus-super-heroes.iml" filepath="$PROJECT_DIR$/.idea/quarkus-super-heroes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villains/src/test/test.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villains/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villains/rest-villains.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villains/rest-villains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-parent-root.iml" filepath="$PROJECT_DIR$/super-parent-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/ui-super-heroes/ui-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/ui-super-heroes/ui-super-heroes.iml" />
     </modules>
   </component>
 </project>
