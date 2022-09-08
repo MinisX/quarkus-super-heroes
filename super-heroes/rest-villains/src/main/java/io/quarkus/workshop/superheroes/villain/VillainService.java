@@ -14,6 +14,13 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @Transactional(REQUIRED)
 public class VillainService {
 
+    /*When we persist a new villain, we want to multiply the level by a value that can be
+    configured(to reduce the level, so heroes will win the fights more easily).
+    For this, Quarkus uses MicroProfile Config to inject the configuration in the application.[20]
+    The injection uses the @ConfigProperty annotation.*/
+    @ConfigProperty(name = "level.multiplier", defaultValue="1.0")
+    double levelMultiplier;
+
     @Transactional(SUPPORTS)
     public List<Villain> findAllVillains() {
         return Villain.listAll();
