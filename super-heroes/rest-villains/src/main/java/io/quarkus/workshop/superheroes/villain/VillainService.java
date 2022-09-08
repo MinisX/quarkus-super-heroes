@@ -40,7 +40,9 @@ public class VillainService {
         return randomVillain;
     }
 
+    // method to use the injected properties
     public Villain persistVillain(@Valid Villain villain) {
+        villain.level = (int) Math.round(villain.level * levelMultiplier);
         villain.persist();
         return villain;
     }
