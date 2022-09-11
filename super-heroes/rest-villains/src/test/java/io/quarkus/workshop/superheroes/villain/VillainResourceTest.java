@@ -40,6 +40,16 @@ public class VillainResourceTest {
     private static final int NB_VILLAINS = 581;
     private static String villainId;
 
+    /*ensuring that the OpenAPI specification is packaged with the application*/
+    @Test
+    void shouldPingOpenAPI() {
+        given()
+            .header(ACCEPT, JSON)
+            .when().get("/q/openapi")
+            .then()
+            .statusCode(OK.getStatusCode());
+    }
+
     @Test
     public void testHelloEndpoint() {
         given()
