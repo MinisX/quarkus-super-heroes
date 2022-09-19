@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/load-super-heroes/load-super-heroes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-fights/rest-fights.iml" filepath="$PROJECT_DIR$/super-heroes/rest-fights/rest-fights.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-heroes/rest-heroes.iml" filepath="$PROJECT_DIR$/super-heroes/rest-heroes/rest-heroes.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-heroes/rest-villains/rest-villains.iml" filepath="$PROJECT_DIR$/super-heroes/rest-villains/rest-villains.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-parent-root.iml" filepath="$PROJECT_DIR$/super-parent-root.iml" />
