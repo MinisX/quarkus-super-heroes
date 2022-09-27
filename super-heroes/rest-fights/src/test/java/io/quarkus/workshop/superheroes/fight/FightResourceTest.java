@@ -2,6 +2,8 @@ package io.quarkus.workshop.superheroes.fight;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.workshop.superheroes.fight.client.Hero;
+import io.quarkus.workshop.superheroes.fight.client.MockHeroProxy;
+import io.quarkus.workshop.superheroes.fight.client.MockVillainProxy;
 import io.quarkus.workshop.superheroes.fight.client.Villain;
 import io.restassured.common.mapper.TypeRef;
 import org.hamcrest.core.Is;
@@ -11,8 +13,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 import java.util.List;
-
 import java.util.Random;
+
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static javax.ws.rs.core.HttpHeaders.ACCEPT;
@@ -142,5 +144,20 @@ public class FightResourceTest {
         return new TypeRef<List<Fight>>() {
             // Kept empty on purpose
         };
+    }
+
+    @Test
+    void shouldGetRandomFighters() {
+        given()
+            .when().get("/api/fights/randomfighters")
+            .then()
+            .statusCode(OK.getStatusCode())
+            .contentType(APPLICATION_JSON)
+            .body("hero.name", Is.is(MockHeroProxy.DEFAULT_HERO_NAME))
+            .body("hero.picture", Is.is(MockHeroProxy.DEFAULT_HERO_PICTURE))
+            .body("hero.level", Is.is(MockHeroProxy.DEFAULT_HERO_LEVEL))
+            .body("villain.name", Is.is(MockVillainProxy.DEFAULT_VILLAIN_NAME))
+            .body("villain.picture", Is.is(MockVillainProxy.DEFAULT_VILLAIN_PICTURE))
+            .body("villain.level", Is.is(MockVillainProxy.DEFAULT_VILLAIN_LEVEL));
     }
 }
