@@ -9,11 +9,13 @@
         <module name="rest-fights" />
         <module name="ui-super-heroes" />
         <module name="rest-heroes" />
+        <module name="event-statistics" />
         <module name="load-super-heroes" />
         <module name="rest-villains" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="event-statistics" target="11" />
       <module name="load-super-heroes" target="11" />
       <module name="quarkus-super-heroes" target="1.5" />
       <module name="rest-fights" target="11" />
@@ -25,6 +27,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="event-statistics" options="-parameters" />
       <module name="rest-fights" options="-parameters" />
       <module name="rest-heroes" options="-parameters" />
       <module name="rest-villains" options="-parameters" />

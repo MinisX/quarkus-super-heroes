@@ -7,6 +7,8 @@ import io.quarkus.workshop.superheroes.fight.client.VillainProxy;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 import org.eclipse.microprofile.faulttolerance.Fallback;
+import org.eclipse.microprofile.reactive.messaging.Channel;
+import org.eclipse.microprofile.reactive.messaging.Emitter;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -22,6 +24,7 @@ import static javax.transaction.Transactional.TxType.SUPPORTS;
 @Transactional(SUPPORTS)
 public class FightService {
 
+    @Channel("fights") Emitter<Fight> emitter;
     @Inject Logger logger;
 
     @RestClient HeroProxy heroProxy;
@@ -65,6 +68,8 @@ public class FightService {
 
         fight.fightDate = Instant.now();
         fight.persist();
+
+        emitter.send(fight).toCompletableFuture().join();
 
         return fight;
     }
@@ -126,5 +131,6 @@ public class FightService {
         villain.level = 42;
         return villain;
     }
+
 
 }
