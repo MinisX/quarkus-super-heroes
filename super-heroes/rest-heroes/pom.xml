@@ -6,7 +6,6 @@
   <artifactId>rest-heroes</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <name>Quarkus Workshop :: Super-Heroes :: Heroes Microservice</name>
-
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <failsafe.useModulePath>false</failsafe.useModulePath>
@@ -57,6 +56,10 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
